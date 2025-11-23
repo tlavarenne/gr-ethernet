@@ -1,0 +1,45 @@
+id: ethernet_fastethernet_descrambler
+label: FastEthernet Descrambler
+category: '[Ethernet]'
+
+parameters:
+- id: search_window
+  label: Search Window
+  dtype: int
+  default: '50'
+- id: idle_run
+  label: Idle Run
+  dtype: int
+  default: '40'
+- id: max_idle_no_idle
+  label: Max Idle No Idle
+  dtype: int
+  default: '100'
+- id: max_in_frame_no_idle
+  label: Max In Frame No Idle
+  dtype: int
+  default: '20000'
+- id: print_debug
+  label: Print Debug
+  dtype: bool
+  default: 'False'
+  options: ['True', 'False']
+  option_labels: ['Yes', 'No']
+
+inputs:
+- domain: stream
+  dtype: byte
+
+outputs:
+- domain: stream
+  dtype: byte
+
+templates:
+  imports: from gnuradio import ethernet
+  make: ethernet.fastethernet_descrambler(${search_window}, ${idle_run}, ${max_idle_no_idle}, ${max_in_frame_no_idle}, ${print_debug})
+
+documentation: |-
+  100BASE-TX descrambler with auto-synchronization and re-sync.
+  Detects IDLE patterns and frame boundaries.
+
+file_format: 1

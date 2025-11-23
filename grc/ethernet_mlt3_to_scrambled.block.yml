@@ -1,0 +1,21 @@
+id: ethernet_mlt3_to_scrambled
+label: MLT3 to Scrambled
+category: '[Ethernet]'
+
+inputs:
+- domain: stream
+  dtype: float
+
+outputs:
+- domain: stream
+  dtype: byte
+
+templates:
+  imports: from gnuradio import ethernet
+  make: ethernet.mlt3_to_scrambled()
+
+documentation: |-
+  Converts MLT-3 symbols (-1, 0, +1) to NRZI bits.
+  Detects transitions: transition = 1, no transition = 0
+
+file_format: 1

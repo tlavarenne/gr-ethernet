@@ -1,0 +1,24 @@
+id: ethernet_fastethernet_frame_decoder
+label: FastEthernet Frame Decoder
+category: '[Ethernet]'
+
+inputs:
+- domain: stream
+  dtype: byte
+
+outputs:
+- domain: message
+  id: decoded
+  optional: true
+
+templates:
+  imports: from gnuradio import ethernet
+  make: ethernet.fastethernet_frame_decoder()
+
+documentation: |-
+  Decodes 100BASE-TX Ethernet frames from descrambled bits.
+  Performs 5B/4B decoding and frame extraction.
+  Outputs frame information via message port.
+  Supports: Ethernet, IPv4, TCP, UDP, ICMP
+
+file_format: 1

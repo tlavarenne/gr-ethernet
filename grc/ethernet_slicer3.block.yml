@@ -1,0 +1,29 @@
+id: ethernet_slicer3
+label: Slicer3
+category: '[Ethernet]'
+
+parameters:
+- id: threshold
+  label: Threshold
+  dtype: float
+  default: '0.33'
+
+inputs:
+- domain: stream
+  dtype: float
+
+outputs:
+- domain: stream
+  dtype: float
+
+templates:
+  imports: from gnuradio import ethernet
+  make: ethernet.slicer3(${threshold})
+  callbacks:
+  - set_threshold(${threshold})
+
+documentation: |-
+  3-level slicer for MLT-3/PAM3 signals.
+  Output: -1.0, 0.0, +1.0
+
+file_format: 1

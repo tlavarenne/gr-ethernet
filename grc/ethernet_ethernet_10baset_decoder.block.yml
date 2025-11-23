@@ -1,0 +1,29 @@
+id: ethernet_ethernet_10baset_decoder
+label: Ethernet 10BASE-T Decoder
+category: '[Ethernet]'
+
+parameters:
+- id: tag_name
+  label: Tag Name
+  dtype: string
+  default: 'packet'
+
+inputs:
+- domain: stream
+  dtype: byte
+
+outputs:
+- domain: message
+  id: decoded
+  optional: true
+
+templates:
+  imports: from gnuradio import ethernet
+  make: ethernet.ethernet_10baset_decoder(${tag_name})
+
+documentation: |-
+  Decodes 10BASE-T Ethernet frames from Manchester-encoded bits.
+  Outputs frame information via message port.
+  Supports: Ethernet, VLAN, IPv4, IPv6, TCP, UDP, ICMP
+
+file_format: 1

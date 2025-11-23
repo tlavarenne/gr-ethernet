@@ -1,0 +1,26 @@
+# Build files
+build/
+*.o
+*.so
+*.a
+*.pyc
+__pycache__/
+
+# IDE
+.vscode/
+.idea/
+*~
+*.swp
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Python
+*.egg-info/
+dist/
+
+# Flask
+.flask_session/
