@@ -20,6 +20,18 @@ This work follows the article "Ethernet √† la loupe: de la couche physique au d√
 - **Ethernet 10BASE-T Decoder**: Manchester-encoded frame decoder
 
 
+## Screenshots
+
+### Web Inspector
+![Web Inspector](docs/images/Flowgraph10BASETX.png)
+
+### 100BASE-TX Flowgraph
+![100BASE-TX Flowgraph](docs/images/Flowgraph100BASETX.png)
+
+### Decoded Frames Example
+![Decoded Frames](docs/images/web_inspector.png)
+
+
 ### Decoded Information
 
 Each frame provides:
@@ -161,6 +173,8 @@ The web inspector expects ZMQ messages at `tcp://127.0.0.1:5555`. Add a ZMQ PUB 
 - Probe: Differential or single-ended on twisted pair
 
 The provided examples use data captured via crosstalk monitoring on adjacent twisted pairs, as described in Hackable Magazine #61.
+
+
 
 ## Troubleshooting
 
