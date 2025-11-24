@@ -69,7 +69,7 @@ git clone https://github.com/tlavarenne/gr-ethernet.git
 cd gr-ethernet
 mkdir build
 cd build
-cmake -DCMAKE_INSTALL_PREFIX=/usr ..
+cmake -DCMAKE_INSTALL_PREFIX=/usr ..    # Adjust CMAKE_INSTALL_PREFIX for your system
 make -j$(nproc)
 sudo make install
 sudo ldconfig
@@ -89,7 +89,7 @@ git clone https://github.com/jmfriedt/gr-oscilloscope.git
 cd gr-oscilloscope
 mkdir build
 cd build
-cmake -DCMAKE_INSTALL_PREFIX=/usr ..
+cmake -DCMAKE_INSTALL_PREFIX=/usr ..    # Adjust CMAKE_INSTALL_PREFIX for your system
 make -j$(nproc)
 sudo make install
 sudo ldconfig
