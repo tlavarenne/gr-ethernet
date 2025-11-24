@@ -4,7 +4,7 @@ GNU Radio blocks for Ethernet physical layer signal processing and frame decodin
 
 Supports both 10BASE-T (Manchester encoding) and 100BASE-TX (MLT-3 encoding) standards with full protocol stack decoding up to Layer 4.
 
-This work follows the article "Ethernet à la loupe: de la couche physique au décodage des trames" published in Hackable Magazine #61 (Juillet - Aout 2025).
+This work follows the article "Ethernet à la loupe : de la couche physique au décodage des trames" published in Hackable Magazine #61 (Juillet - Aout 2025).
 
 ## Features
 
@@ -171,8 +171,7 @@ The web inspector expects ZMQ messages at `tcp://127.0.0.1:5555`. Add a ZMQ PUB 
 - Bandwidth: 50 MHz minimum
 - Probe: Differential or single-ended on twisted pair
 
-The provided examples use data captured via crosstalk monitoring on adjacent twisted pairs, as described in Hackable Magazine #61.
-
+The provided examples use data captured by directly probing a twisted pair with a differential probe, as described in Hackable Magazine #61.
 
 
 ## Troubleshooting
