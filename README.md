@@ -6,6 +6,10 @@ Supports both 10BASE-T (Manchester encoding) and 100BASE-TX (MLT-3 encoding) sta
 
 This work follows the article "Ethernet à la loupe : de la couche physique au décodage des trames" published in Hackable Magazine #61 (Juillet - Aout 2025).
 
+### 10BASE-T Flowgraph
+![Web Inspector](docs/images/oscillo.png)
+
+
 ## Features
 
 ### Signal Processing Blocks
