@@ -168,12 +168,12 @@ The web inspector expects ZMQ messages at `tcp://127.0.0.1:5555`. Add a ZMQ PUB 
 **100BASE-TX:**
 - Sample rate: 500 MS/s - 1 GS/s
 - Bandwidth: 200 MHz minimum
-- Probe: Differential or single-ended on twisted pair
+- Probe: Differential on twisted pair
 
 **10BASE-T:**
 - Sample rate: 100 MS/s - 1.25 GS/s
 - Bandwidth: 50 MHz minimum
-- Probe: Differential or single-ended on twisted pair
+- Probe: Differential on twisted pair
 
 The provided examples use data captured by directly probing a twisted pair with a differential probe, as described in Hackable Magazine #61.
 
@@ -182,7 +182,7 @@ The provided examples use data captured by directly probing a twisted pair with 
 
 ### No frames decoded (100BASE-TX)
 
-- Check signal amplitude (use Multiply Const before Slicer3, typical values: 5-15)
+- Check signal amplitude (use Multiply Const, typical values: 5-15)
 - Verify Symbol Sync convergence (use QT GUI Time Sink)
 - Try adjusting Slicer3 threshold (typical range: 0.2-0.5)
 - Enable debug output in FastEthernet Descrambler
