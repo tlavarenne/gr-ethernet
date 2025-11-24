@@ -83,10 +83,10 @@ gnuradio-companion  # Blocks should appear in [Ethernet] category
 
 ### Real-time Oscilloscope Acquisition 
 
-For real-time signal acquisition from supported oscilloscopes, install gr-oscillo by Jean-Michel Friedt:
+For real-time signal acquisition from supported oscilloscopes, install gr-oscilloscope by Jean-Michel Friedt:
 ```bash
 git clone https://github.com/jmfriedt/gr-oscilloscope.git
-cd gr-oscillo
+cd gr-oscilloscope
 mkdir build
 cd build
 cmake -DCMAKE_INSTALL_PREFIX=/usr ..
