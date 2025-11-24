@@ -22,7 +22,7 @@ This work follows the article "Ethernet à la loupe: de la couche physique au d�
 
 ## Screenshots
 
-### Web Inspector
+### 10BASE-T Flowgraph
 ![Web Inspector](docs/images/Flowgraph10BASETX.png)
 
 ### 100BASE-TX Flowgraph
@@ -37,7 +37,6 @@ This work follows the article "Ethernet à la loupe: de la couche physique au d�
 Each frame provides:
 - Source and destination MAC addresses
 - EtherType and protocol identification
-- VLAN ID, PCP, and DEI (when present)
 - IP source and destination addresses (IPv4/IPv6)
 - TTL/Hop Limit
 - Protocol type (TCP/UDP/ICMP)
@@ -78,7 +77,7 @@ python3 -c "from gnuradio import ethernet; print('gr-ethernet loaded successfull
 gnuradio-companion  # Blocks should appear in [Ethernet] category
 ```
 
-### Real-time Oscilloscope Acquisition (Optional)
+### Real-time Oscilloscope Acquisition 
 
 For real-time signal acquisition from supported oscilloscopes, install gr-oscillo by Jean-Michel Friedt:
 ```bash
@@ -201,16 +200,10 @@ GNU General Public License v3.0
 
 Thomas Lavarenne
 
-## Acknowledgments
+## References and acknowledgments
 
 - **Jean-Michel Friedt**: For gr-oscillo module
 - **Hackable Magazine #61** "Ethernet à la loupe: de la couche physique au décodage des trames" 
 - GNU Radio community for the excellent framework
 
-## References
 
-- gr-oscillo: https://github.com/jmfriedt/gr-oscillo
-
-
-
-Built for educational purposes in the context of BTS CIEL (Cybersécurité, Informatique et Réseaux, Électronique)
