@@ -81,7 +81,7 @@ gnuradio-companion  # Blocks should appear in [Ethernet] category
 
 For real-time signal acquisition from supported oscilloscopes, install gr-oscillo by Jean-Michel Friedt:
 ```bash
-git clone https://github.com/jmfriedt/gr-oscillo.git
+git clone https://github.com/jmfriedt/gr-oscilloscope.git
 cd gr-oscillo
 mkdir build
 cd build
@@ -91,7 +91,7 @@ sudo make install
 sudo ldconfig
 ```
 
-Special thanks to Jean-Michel Friedt for gr-oscillo.
+Special thanks to Jean-Michel Friedt for gr-oscilloscope.
 
 ## Usage
 
@@ -202,7 +202,7 @@ Thomas Lavarenne
 
 ## References and acknowledgments
 
-- **Jean-Michel Friedt**: For gr-oscillo module
+- **Jean-Michel Friedt**: For gr-oscilloscope module
 - **Hackable Magazine #61** "Ethernet à la loupe: de la couche physique au décodage des trames" 
 - GNU Radio community for the excellent framework
 
